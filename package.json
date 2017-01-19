@@ -1,0 +1,36 @@
+{
+  "name": "fm-common",
+  "version": "1.0.0",
+  "description": "Firstmac standard modules",
+  "main": "index.js",
+  "scripts": {
+    "test": "LOG_MUTE=1 SUPPRESS_NO_CONFIG_WARNING=1 ./node_modules/.bin/istanbul test ./node_modules/.bin/_mocha -- -R spec"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@git.firstmac.com.au:libraries/fm-common.git"
+  },
+  "keywords": [
+    "Firstmac",
+    "common",
+    "standard",
+    "user",
+    "logging",
+    "function"
+  ],
+  "author": "Michael Tuttle <michael.tuttle@firstmac.com.au>",
+  "license": "ISC",
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "istanbul": "^0.4.5",
+    "mocha": "^3.2.0"
+  },
+  "dependencies": {
+    "aws-kinesis-writable": "^2.0.0",
+    "bunyan": "^1.8.5",
+    "config": "^1.24.0",
+    "lodash": "^4.17.4",
+    "q": "^1.4.1",
+    "restify-errors": "^4.3.0"
+  }
+}
